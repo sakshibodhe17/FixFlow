@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: fixflow
       POSTGRES_DB: fixflow
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - fixflow_pgdata:/var/lib/postgresql/data
     healthcheck:
@@ -19,3 +19,4 @@ services:
 
 volumes:
   fixflow_pgdata:
+  
