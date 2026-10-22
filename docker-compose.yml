@@ -1,0 +1,21 @@
+# PostgreSQL for FixFlow. Start with:  docker compose up -d
+services:
+  db:
+    image: postgres:16
+    container_name: fixflow-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: fixflow
+      POSTGRES_PASSWORD: fixflow
+      POSTGRES_DB: fixflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - fixflow_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fixflow"]
+      interval: 5s
+      retries: 10
+
+volumes:
+  fixflow_pgdata:

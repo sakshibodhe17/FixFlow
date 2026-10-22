@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+backend/.env
+backend/uploads/*
+backend/ml_models/*
+backend/backups/*
+backend/logs/*
+!backend/**/.gitkeep
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+.DS_Store
