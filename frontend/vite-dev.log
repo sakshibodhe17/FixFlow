@@ -1,0 +1,11 @@
+
+> fixflow-frontend@1.0.0 dev
+> vite --host 127.0.0.1 --port 5173
+
+
+  VITE v5.4.11  ready in 522 ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+  ➜  press h + enter to show help
+1:15:54 pm [vite] vite.config.js changed, restarting server...
+1:15:54 pm [vite] server restarted.
